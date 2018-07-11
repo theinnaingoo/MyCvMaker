@@ -56,10 +56,10 @@ public class CV_create extends Fragment {
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getChildFragmentManager());
-        adapter.addFragment(new Profile(), " My Profile");
-    adapter.addFragment(new Education(), "Education");
+        adapter.addFragment(new Profile(), " My M_Profile");
+    adapter.addFragment(new Education(), "M_Education");
     adapter.addFragment(new Skill(), "Skills  ");
-       adapter.addFragment(new Experience(), "Experience");
+       adapter.addFragment(new Experience(), "M_Experience");
         viewPager.setAdapter(adapter);
     }
 

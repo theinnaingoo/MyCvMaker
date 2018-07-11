@@ -12,7 +12,6 @@ import android.widget.TextView;
 
 import java.util.List;
 
-import skylark.intern.demon.mycvmaker.Model.CV;
 import skylark.intern.demon.mycvmaker.R;
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.CVview> {
