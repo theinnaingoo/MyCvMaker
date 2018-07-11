@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">MyCvMaker</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="incomplete">Please fill all requirement fields</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="degree_level">
+        <item>Choose education level</item>
+        <item>Diploma</item>
+        <item>Bachelor Degree</item>
+        <item>Master Degree</item>
+        <item>PHD</item>
+
+
+    </string-array>
+
+    <string-array name="language_level">
+        <item>Choose level</item>
+        <item>Basic</item>
+        <item>Conversational</item>
+        <item>Fluent</item>
+        <item>Native Tongue</item>
+
+
+    </string-array>
+    <string name="title_activity_data_result">DataResult</string>
+</resources>

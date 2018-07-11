@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.Education"
+    android:orientation="vertical"
+    android:background="@drawable/form_border">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Qualification?"
+       android:layout_gravity="center"
+        android:textStyle="bold"
+        android:layout_margin="10dp"/>
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/edu_group"
+        android:gravity="center"
+        android:layout_marginLeft="10dp">
+        <RadioButton android:id="@+id/ungraducated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ungraduated"
+
+           />
+        <RadioButton android:id="@+id/graduated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Graduated"
+            android:layout_marginLeft="20dp"
+
+          />
+    </RadioGroup>
+
+    <View
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/is_graduated"
+        android:visibility="gone"
+        android:layout_margin="10dp">
+
+        <Spinner
+            android:id="@+id/degree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/degree_level"
+             />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_mpu">
+
+            <EditText
+                android:id="@+id/major"
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Major"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_mpu">
+
+            <EditText
+                android:id="@+id/university"
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="University"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_mpu">
+
+            <EditText
+                android:id="@+id/graduated_year"
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Graduated Year"
+                android:inputType="number"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+    <View
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Other qualification"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"/>
+
+
+
+        <EditText
+            android:id="@+id/other_qualification"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/edu_save"/>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>
